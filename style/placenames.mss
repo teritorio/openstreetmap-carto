@@ -5,7 +5,7 @@
 @county-labels: darken(@admin-boundaries-wide, 5%);
 
 #country-names {
-  [zoom >= 3][zoom < 5][way_pixels > 1000],
+  [zoom >= 4][zoom < 5][way_pixels > 1000],
   [zoom >= 5][way_pixels < 360000] {
     text-name: "[name]";
     text-size: 10;
