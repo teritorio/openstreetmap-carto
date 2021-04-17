@@ -1194,6 +1194,8 @@ Layer:
             AND way_area > 100*POW(!scale_denominator!*0.001*0.28,2)
             AND way_area < 4000000*POW(!scale_denominator!*0.001*0.28,2)
             AND osm_id < 0
+            AND tags->'wikidata' != 'Q40362'
+            AND osm_id != -5441968
           ORDER BY way_area DESC
         ) AS country_names
     properties:
